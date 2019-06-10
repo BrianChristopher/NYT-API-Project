@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
 
     <!-- THIS IS JQUERY -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -14,38 +13,56 @@
 
 <body>
 
-    <script type="text/javascript">
-        //This is the example
-        //https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=yourkey
+
+    <title>NYT API Project</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>New York Times Search</header>
+        </div>
 
 
-        //This it the API key  
-        //W7p63YxABy6Wr7IKJtHaPQdw62SRDerZ
-        var APIKey = "W7p63YxABy6Wr7IKJtHaPQdw62SRDerZ";
 
-        //This is the search term
-        var search = "cats";
+        <footer>
+            <hr>
+            <p>Made with lots of lots</p>
+            <p><img src="assets/images/heart.png" width="50px" height="50px"></p>
+        </footer>
 
-        //This is the queryURL
-        var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + search + "&api-key=" + APIKey;
-
-        //This is the AJAX call
-
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        }).then(function (response) {
-
-            console.log(response.response.docs);
-            var results = response.response.docs;
-
-            console.log(results[0].snippet);
-            console.log(results[1].snippet);
+        <script type="text/javascript">
+            //This is the example
+            //https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key=yourkey
 
 
-        });
-    </script>
+            //This it the API key  
+            //W7p63YxABy6Wr7IKJtHaPQdw62SRDerZ
+            var APIKey = "W7p63YxABy6Wr7IKJtHaPQdw62SRDerZ";
 
-</body>
+            //This is the search term
+            var search = "cats";
+
+            //This is the queryURL
+            var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + search + "&api-key=" + APIKey;
+
+            //This is the AJAX call
+
+            $.ajax({
+                url: queryURL,
+                method: "GET"
+            }).then(function (response) {
+
+                console.log(response.response.docs);
+                var results = response.response.docs;
+
+                console.log(results[0].snippet);
+                console.log(results[1].snippet);
+
+
+            });
+        </script>
+
+    </body>
 
 </html>

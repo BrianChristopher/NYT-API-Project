@@ -5,11 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NYT API Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="container">
         <header>New York Times Search</header>
+        <div class="searchParam">
+            <form>
+                <!-- search term input -->
+                <p>
+                <label>Search Term:</label>
+                </p>
+                <P>
+                <input type="text" id="sTerm" name="SearchTerm">
+                </P>
+                <P>
+                <!-- records to retrieve input -->
+                <label>Number of Records to Retrieve:</label>
+                </P>
+                <p>
+                <input type="text" id="records">
+                </p>
+                <p>
+                <!-- start year input -->
+                <label>Start Year (Optional):</label>
+                </p>
+                <p>
+                <input type="text" id="startYear">
+                </p>
+                <p>
+                <!-- End year input -->
+                <label>End Year (Optional):</label>
+                </p>
+                <p>
+                <input type="text" id="endYear">
+                </p>
+                <!-- Search and clear results -->
+            </form>
+        </div>
     </div>
     
 

@@ -3,10 +3,30 @@ body{
 }
 
 header{
-    background-color: blue;
-    text-align: center
+    font-family: 'Domine', serif;
+    font-size: 400%;
+    background-color: #040467;
+    text-align: center;
+    color: white;
+    margin: .02rem .2rem 0rem .2rem;
 }
 
 footer {
     text-align: center;
+}
+
+.searchParam{
+    width: 46rem;
+    margin: auto;
+}
+
+input{
+    width: 99%
+}
+
+form{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 5px;
+    border: 1px solid black
 }

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
-           
-=======
     <title>NYT API Project</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- THIS IS JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <div class="container">
         <header>New York Times Search</header>
     </div>
@@ -22,10 +24,6 @@
         <p>Made with lots of lots</p>
         <p><img src="assets/images/heart.png" width="50px" height="50px"></p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-</head>
-<body> 
         <script type="text/javascript">
             var apiKey = "0HrCpn7F3y1C7ni5R7kklAKPBzFKJdAo";
             var search = "cats";
@@ -34,16 +32,10 @@
             $.ajax({
                 url : queryUrl,
                 method: "GET",
-            }).then(function(response){
-                console.log(response.response.docs);
-                var results = response.response.docs;
-
-                console.log(results[0].snippet);
-                console.log(results[3].snippet);
-
-                
+            }).then(function(response){           
             });
         </script>
 >>>>>>> master
 </body>
+
 </html>
